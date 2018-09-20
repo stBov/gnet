@@ -1,11 +1,11 @@
 package gosrpc
 
 import (
+	"fmt"
 	"net/rpc"
 	"net"
 	"net/rpc/jsonrpc"
 	"log"
-	"fmt"
 )
 
 func services(){
@@ -28,7 +28,6 @@ func services(){
 		//这里使用jsonrpc进行处理
 		go jsonrpc.ServeConn(conn);
 	}
-	fmt.Println("JSONrpcService END")
 }
 func clients()  {
 	fmt.Println("JSONrpcClient START")

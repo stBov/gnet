@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"runtime"
-	"gosrpc"
+	"github.com/stBov/gnet/src/gosrpc"
 )
 
 func main() {

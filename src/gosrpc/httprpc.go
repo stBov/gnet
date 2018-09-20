@@ -18,7 +18,6 @@ func startRpcServer() {
 	if err != nil {
 		log.Fatal(err);
 	}
-	fmt.Println("HTTPrpcService END")
 }
 
 func tryRpcClient() {
